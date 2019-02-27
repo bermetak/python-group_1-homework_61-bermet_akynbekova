@@ -10,18 +10,17 @@ import Contacts from './containers/Contacts/Contacts';
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <BrowserRouter>
-                    <Layout>
+            <BrowserRouter>
+                <Layout>
+                    <div className="container">
                         <Switch>
                             <Route path="/contacts" component={Contacts}/>
                             <Route path="/aboutus" component={AboutUs}/>
                             <Route path="/" exact component={Home}/>
-
                         </Switch>
-                    </Layout>
-                </BrowserRouter>
-            </div>
+                    </div>
+                </Layout>
+            </BrowserRouter>
         );
     }
 }

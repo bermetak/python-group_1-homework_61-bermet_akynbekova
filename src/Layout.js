@@ -7,9 +7,11 @@ class Layout extends Component {
         return (
             <Fragment>
                 <div className="Navlinks">
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/aboutus'>About Us</NavLink>
-                    <NavLink to='/contacts'>Contacts</NavLink>
+                    <div className='container pt-3'>
+                        <NavLink className='link mr-3' to='/'>Home</NavLink>
+                        <NavLink className='link mr-3' to='/aboutus'>About Us</NavLink>
+                        <NavLink className='link mr-3' to='/contacts'>Contacts</NavLink>
+                    </div>
                 </div>
                 {this.props.children}
             </Fragment>
